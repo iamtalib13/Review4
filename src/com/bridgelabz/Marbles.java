@@ -1,7 +1,6 @@
 package com.bridgelabz;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 class Marble {
     ArrayList<Marble> marbleArrayList = new ArrayList<Marble>();
@@ -24,9 +23,6 @@ class Marble {
         this.price = price;
     }
 
-    Scanner sc1 = new Scanner(System.in);
-    Scanner sc2 = new Scanner(System.in);
-
     public void setMarble(String color, int price) {
         Marble marbleObj = new Marble();
 
@@ -44,7 +40,7 @@ class Marble {
 
         for (int i = 1; i < size; i++) {
             if (min.getPrice() > marbleArrayList.get(i).getPrice()) {
-                if (marbleArrayList.get(i).getColor()=="red"){
+                if (marbleArrayList.get(i).getColor() == "red") {
                     min = marbleArrayList.get(i);
                 }
             }
